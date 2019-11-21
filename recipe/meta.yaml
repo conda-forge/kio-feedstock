@@ -11,7 +11,7 @@ source:
   sha256: e38c8dcf634989f0f7ec95b68bdd936b9e05f7d242e4050b01f79b7021108f59
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
   run_exports:
     - {{ pin_subpackage('kio', max_pin='x.x') }}
@@ -48,7 +48,7 @@ requirements:
     - kiconthemes
     - kcrash
     - solid
-    #- kwallet  gpgmepp not yet available
+    - kwallet
     - kbookmarks
     - kdbusaddons
     - kjobwidgets
