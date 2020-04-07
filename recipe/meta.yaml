@@ -1,5 +1,5 @@
 {% set name = "kio" %}
-{% set version = "5.67.0" %}
+{% set version = "5.68.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/kio-{{ version }}.tar.xz
-  sha256: 47e2c266a59015d7bb83ea0cf8a035f85f871ae650a67abd3b95d5eb75ff54a0
+  sha256: 9cc2fb2da84d6661a90eac81eb12c2e37921a5c34cbc1975f48d613e5a9d9eef
 
 build:
-  number: 1
+  number: 0
   skip: true  # [not linux]
   run_exports:
     - {{ pin_subpackage('kio', max_pin='x.x') }}
@@ -68,7 +68,7 @@ about:
   license: LGPL-v2.1-or-later
   license_family: GPL
   license_file: COPYING.LIB
-  summary: 'Network transparent access to files and data'
+  summary: Network transparent access to files and data
   description: |
     This framework implements almost all the file management functions you will ever need.
     In fact, the KDE file manager (Dolphin) and the KDE file dialog also uses this to
