@@ -1,5 +1,5 @@
 {% set name = "kio" %}
-{% set version = "5.69.0" %}
+{% set version = "5.70.1" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/kio-{{ version }}.tar.xz
-  sha256: 09e4d37058bb5b5993536ea6b010c605b9d2f732e141e9903e2d5f64fea20de6
+  sha256: b440f1a9408cd90ecc8a6bbeecbc4bde12365547bd8ca55c69619a2e659363b8
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - make
-    - extra-cmake-modules
+    - extra-cmake-modules >={{ major_minor }}
     - {{ cdt('libudev') }}  # [linux]
     - {{ cdt('libudev-devel') }}  # [linux]
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
@@ -35,29 +35,29 @@ requirements:
     - xorg-libxext
     - qt
     - krb5
-    - kauth
-    - ki18n
-    - karchive
-    - kconfig
-    - kcodecs
-    - kxmlgui
-    - kservice
-    - kitemviews
-    - kcompletion
-    - kcoreaddons
-    - kiconthemes
-    - kcrash
-    - solid
-    - kwallet
-    - kbookmarks
-    - kdbusaddons
-    - kjobwidgets
-    - kcompletion
-    - ktextwidgets
-    - kwindowsystem
-    - kwidgetsaddons
-    - kconfigwidgets
-    - knotifications
+    - kauth >={{ major_minor }}
+    - ki18n >={{ major_minor }}
+    - karchive >={{ major_minor }}
+    - kconfig >={{ major_minor }}
+    - kcodecs >={{ major_minor }}
+    - kxmlgui >={{ major_minor }}
+    - kservice >={{ major_minor }}
+    - kitemviews >={{ major_minor }}
+    - kcompletion >={{ major_minor }}
+    - kcoreaddons >={{ major_minor }}
+    - kiconthemes >={{ major_minor }}
+    - kcrash >={{ major_minor }}
+    - solid >={{ major_minor }}
+    - kwallet >={{ major_minor }}
+    - kbookmarks >={{ major_minor }}
+    - kdbusaddons >={{ major_minor }}
+    - kjobwidgets >={{ major_minor }}
+    - kcompletion >={{ major_minor }}
+    - ktextwidgets >={{ major_minor }}
+    - kwindowsystem >={{ major_minor }}
+    - kwidgetsaddons >={{ major_minor }}
+    - kconfigwidgets >={{ major_minor }}
+    - knotifications >={{ major_minor }}
 
 test:
   commands:
