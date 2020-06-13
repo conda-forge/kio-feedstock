@@ -1,5 +1,5 @@
 {% set name = "kio" %}
-{% set version = "5.70.1" %}
+{% set version = "5.71.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/kio-{{ version }}.tar.xz
-  sha256: b440f1a9408cd90ecc8a6bbeecbc4bde12365547bd8ca55c69619a2e659363b8
+  sha256: b972c8dede50be3e89babb5a536054759db2a87003e6df770c598c7c1c94b8d6
 
 build:
   number: 0
