@@ -1,5 +1,5 @@
 {% set name = "kio" %}
-{% set version = "5.73.0" %}
+{% set version = "5.74.1" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/kio-{{ version }}.tar.xz
-  sha256: 05da159e6cf5ef9aa4dd7ede86ce28a5581624a1b3f0b4718c5b7e30c4aa2a66
+  sha256: 2f88a383b751194d4f327d3f87f8ea25fe882f8cc5c58a368529d9ab7143a6e7
 
 build:
   number: 0
@@ -65,9 +65,22 @@ test:
 
 about:
   home: https://api.kde.org/frameworks/kio/html/index.html
-  license: LGPL-v2.1-or-later
-  license_family: GPL
-  license_file: COPYING.LIB
+  license: BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-only AND GPL-2.0-or-later AND GPL-3.0-only AND LGPL-2.0-only AND LGPL-2.0-or-later AND LGPL-2.1-only AND LGPL-2.1-or-later AND LGPL-3.0-only AND LicenseRef-KDE-Accepted-GPL AND LicenseRef-KDE-Accepted-LGPL AND MIT AND Qt-Commercial-exception-1.0
+  license_file:
+    - LICENSES/BSD-2-Clause.txt
+    - LICENSES/BSD-3-Clause.txt
+    - LICENSES/GPL-2.0-only.txt
+    - LICENSES/GPL-2.0-or-later.txt
+    - LICENSES/GPL-3.0-only.txt
+    - LICENSES/LGPL-2.0-only.txt
+    - LICENSES/LGPL-2.0-or-later.txt
+    - LICENSES/LGPL-2.1-only.txt
+    - LICENSES/LGPL-2.1-or-later.txt
+    - LICENSES/LGPL-3.0-only.txt
+    - LICENSES/LicenseRef-KDE-Accepted-GPL.txt
+    - LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
+    - LICENSES/MIT.txt
+    - LICENSES/Qt-Commercial-exception-1.0.txt
   summary: Network transparent access to files and data
   description: |
     This framework implements almost all the file management functions you will ever need.
