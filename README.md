@@ -3,11 +3,13 @@ About kio
 
 Home: https://api.kde.org/frameworks/kio/html/index.html
 
-Package license: LGPL-v2.1-or-later
+Package license: BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-only AND GPL-2.0-or-later AND GPL-3.0-only AND LGPL-2.0-only AND LGPL-2.0-or-later AND LGPL-2.1-only AND LGPL-2.1-or-later AND LGPL-3.0-only AND LicenseRef-KDE-Accepted-GPL AND LicenseRef-KDE-Accepted-LGPL AND MIT AND Qt-Commercial-exception-1.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kio-feedstock/blob/master/LICENSE.txt)
 
 Summary: Network transparent access to files and data
+
+Development: https://cgit.kde.org/kio.git/tree
 
 This framework implements almost all the file management functions you will ever need.
 In fact, the KDE file manager (Dolphin) and the KDE file dialog also uses this to
