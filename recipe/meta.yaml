@@ -11,7 +11,7 @@ source:
   sha256: 9351fc85c4020f2f77012e077f4f9d04d8f233e9b67f9b7619c9bc064714145b
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
   run_exports:
     - {{ pin_subpackage('kio', max_pin='x.x') }}
